@@ -24,7 +24,7 @@ canvas { display: block; }
 #over { touch-action: manipulation; }
 #info { position: relative; flex: 1 1 auto; background: var(--panel); min-width: 0; overflow: hidden; padding: 6px 14px 64px; }
 body.portrait #info { overflow: visible; padding-bottom: 80px; }
-#info::before { content: ""; position: absolute; inset: 0; background: url("radar-logo.png") center 55% / min(70%, 460px) no-repeat; opacity: .12; pointer-events: none; }
+#info::before { content: ""; position: absolute; inset: 4% 3%; background: url("radar-logo.png") center / contain no-repeat; opacity: .12; pointer-events: none; }
 #info > * { position: relative; }
 .row { display: flex; align-items: baseline; gap: 14px; margin: 2px 0; font-family: var(--mono); font-weight: 700; }
 .row .lab { color: var(--grey); font-size: clamp(16px, 1.7vw, 28px); width: 4.2em; flex: 0 0 auto; }

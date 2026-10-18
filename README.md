@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/data-exodus-logo.png" alt="Data Exodus" width="240"></p>
+
 # Exodus Radar
 
 A full-screen radar display for a Raspberry Pi, drawing a **Raymarine Quantum** radar's own data stream, with AIS targets, an anchor watch, a wind gauge, depth and speed readouts and a rudder bar. It runs on the Pi that already runs OpenPlotter and Signal K aboard SV Exodus, on a plain HDMI screen at the nav station.
