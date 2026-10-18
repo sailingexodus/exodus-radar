@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/data-exodus-logo.png" alt="Data Exodus" width="240"></p>
+<p align="center"><img src="assets/exodus-marine-logo.png" alt="Exodus Marine" width="240"></p>
 
 # Exodus Radar
 
