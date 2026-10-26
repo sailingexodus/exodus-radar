@@ -1,5 +1,8 @@
 <p align="center"><img src="assets/exodus-marine-logo.png" alt="Exodus Marine" width="240"></p>
 
+> **FREE ANCHOR ALARM APP: Android testers needed through the Play Store.**  
+> Exodus Marine OS: anchor alarm, AIS alarm and boat dashboards on your phone. Two taps to join: **[sailingexodus.net/testers](https://sailingexodus.net/testers)**
+
 # Exodus Radar
 
 A full-screen radar display for a Raspberry Pi, drawing a **Raymarine Quantum** radar's own data stream, with AIS targets, an anchor watch, a wind gauge, depth and speed readouts and a rudder bar. It runs on the Pi that already runs OpenPlotter and Signal K aboard SV Exodus, on a plain HDMI screen at the nav station.
