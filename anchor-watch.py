@@ -162,11 +162,6 @@ def main():
                 st["anchor"] = cfg["anchor"]
                 tg("Anchor watch ON. Circle %d ft around %.5f, %.5f." %
                    (cfg["radius_ft"], cfg["anchor"]["lat"], cfg["anchor"]["lon"]))
-            else:
-                st["state"] = "nogps"
-                save_json(STATUS, st)
-                time.sleep(POLL)
-                continue
 
         if not fresh:
             st["state"] = "nogps"
