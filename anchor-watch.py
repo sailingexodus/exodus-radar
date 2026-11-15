@@ -190,7 +190,7 @@ def main():
             st["dist_ft"] = round(d, 1)
             if d > cfg["radius_ft"]:
                 outside += 1
-            elif d <= cfg["radius_ft"] * BACK_INSIDE:
+            elif outside < OUTSIDE_NEED or d <= cfg["radius_ft"] * BACK_INSIDE:
                 outside = 0
             if outside >= OUTSIDE_NEED:
                 st["state"] = "alarm"
