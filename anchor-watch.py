@@ -195,6 +195,9 @@ def main():
             if outside >= OUTSIDE_NEED:
                 st["state"] = "alarm"
                 now = time.time()
+                if now - last_sound >= SOUND_EVERY or last_sound == 0:
+                    speak("Anchor alarm. The boat has moved %d feet" % d)
+                    last_sound = now
                 if alarm_since is None:
                     alarm_since = now
                     tg("ANCHOR ALARM. The boat is %d ft from the anchor point, circle is %d ft. "
@@ -204,9 +207,6 @@ def main():
                     tg("ANCHOR ALARM still active. %d ft from the anchor point (circle %d ft)." %
                        (d, cfg["radius_ft"]))
                     last_tg = now
-                if now - last_sound >= SOUND_EVERY or last_sound == 0:
-                    speak("Anchor alarm. The boat has moved %d feet" % d)
-                    last_sound = now
             else:
                 st["state"] = "ok"
                 if alarm_since is not None and outside == 0:
