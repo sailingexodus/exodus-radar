@@ -167,14 +167,15 @@ def main():
             st["state"] = "nogps"
             nogps_since = nogps_since or time.time()
             if time.time() - nogps_since >= NOGPS_AFTER:
+                # sound first: the onboard warning must never wait on Telegram
+                if time.time() - last_sound >= SOUND_EVERY * 2:
+                    speak("Anchor watch has lost the GPS")
+                    last_sound = time.time()
                 if not nogps_alarm:
                     nogps_alarm = True
                     tg("ANCHOR WATCH CANNOT SEE GPS. No fresh position for %d seconds. "
                        "Nothing is watching the anchor." % NOGPS_AFTER)
                     last_tg = time.time()
-                if time.time() - last_sound >= SOUND_EVERY * 2:
-                    speak("Anchor watch has lost the GPS")
-                    last_sound = time.time()
                 st["state"] = "nogps_alarm"
         else:
             if nogps_alarm:
