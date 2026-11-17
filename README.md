@@ -2,6 +2,15 @@
 
 # Exodus Radar
 
+> **Android testers wanted.** Help test the free Exodus anchor alarm app. It takes about two minutes. Use the same Google account for every step, the one on your Android device.
+>
+> 1. Join the tester group: https://groups.google.com/g/exodus-app-testers and press "Join group".
+> 2. Open the tester page: https://play.google.com/apps/testing/net.sailingexodus.marineos and press "Become a tester". When the page says "You are a tester", you are in.
+> 3. On that same page, press "download it on Google Play" and install the app.
+> 4. Open the app a few times over the next 14 days. That is all Google needs to see.
+>
+> The same steps are at https://sailingexodus.net/testers. Thank you!
+
 A full-screen radar display for a Raspberry Pi, drawing a **Raymarine Quantum** radar's own data stream, with AIS targets, an anchor watch, a wind gauge, depth and speed readouts and a rudder bar. It runs on the Pi that already runs OpenPlotter and Signal K aboard SV Exodus, on a plain HDMI screen at the nav station.
 
 This is one boat's working setup, published as-is so you can run it on yours instead of rebuilding it. It is a second opinion, not the ship's radar; navigate on your chartplotter.
